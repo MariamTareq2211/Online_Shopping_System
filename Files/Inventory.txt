@@ -1,0 +1,6 @@
+Burger,FastFood,50.0,100
+Pizza,FastFood,120.0,50
+Pasta,FastFood,80.0,40
+Salad,Healthy,30.0,60
+Juice,Beverages,25.0,80
+Water,Beverages,10.0,200

@@ -47,7 +47,6 @@ class User:
     def display_profile(self):
         print(f"""
                 Name: {self.get_Name()}
-                Age: {self.get_Age()}
                 Phone Number: {self.get_Phone()}
                 Email: {self.get_Email()}
                 """)

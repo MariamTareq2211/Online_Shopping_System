@@ -1,4 +1,4 @@
-from CartItem import CartItem
+from Classes.CartItem import CartItem
 
 class Cart:
     def __init__(self, customer_name, items=None):

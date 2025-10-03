@@ -1,8 +1,6 @@
-from User import User
-from Cart import Cart
-from CartItem import CartItem
-from Order import Order
-import datetime
+from Classes.User import User
+from Classes.Cart import Cart
+from Classes.CartItem import CartItem
 
 class Customer(User):
     def __init__(self,name, phone,email,gender,role,username,password,country,city,cart):
@@ -72,14 +70,24 @@ class Customer(User):
 
 
     def place_order(self, orders):
+        import datetime
+        from Classes.Order import Order
+
         if not self.__Cart.get_Items():
             print("Your cart is empty. Add products before placing an order.")
             return
 
-        order = Order(self, "Processing", datetime.datetime.now())
+        order = Order(
+            customer_name=self.get_Name(),
+            items=self.__Cart.get_Items(),
+            total_price=self.__Cart.calculate_TotalPrice(),
+            shipping_address=self.get_ShippingAddress(),
+            status="Processing",
+            date=datetime.datetime.now()
+        )
         orders.append(order)
         print(f"Order placed for {self.get_Name()} on {order.get_Date()}")
-        self.empty_cart()  
+        self.empty_cart()
 
     def cancel_order(self, orders, order):
         if order in orders and order.get_Status() == "Processing":

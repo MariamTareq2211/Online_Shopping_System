@@ -1,6 +1,6 @@
 from collections import defaultdict
-from User import User
-from Product import Product
+from Classes.User import User
+from Classes.Product import Product
 
 class Admin(User):
     def __init__(self, name, phone, email, gender, role, username, password, nationalid, age):

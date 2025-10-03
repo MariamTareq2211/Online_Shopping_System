@@ -1,0 +1,2 @@
+Mariam,0123456789,mariam@mail.com,Female,Customer,mariam123,pass123,Egypt,Cairo
+Mohamed,0112233445,mohamed@mail.com,Male,Customer,mohamed456,pass456,Egypt,Giza

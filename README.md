@@ -69,5 +69,4 @@ It supports Admins, Customers, Products, Carts, and Orders, with data persistenc
 
 # 👨‍💻 Author
 
-    Developed by Mariam Tarek Mohamed
-    📧 Contact: mariemtarek283@gmail.com
+Developed by Mariam Tarek Mohamed 📧 Contact: mariemtarek283@gmail.com
